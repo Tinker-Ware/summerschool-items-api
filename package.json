@@ -1,0 +1,24 @@
+{
+  "name": "summerschool-frontend-items-api",
+  "version": "1.0.0",
+  "description": "API documentation to run items server",
+  "scripts": {
+    "main-store": "git checkout -f && git clean -f && git checkout master",
+    "add-feature": "git checkout -f && git clean -f && git checkout add-feature",
+    "fix-feature": "git checkout -f && git clean -f && git checkout fix-feature",
+    "api-server": "node_modules/drakov/drakov -f api/products.apib -p 3100 --autoOptions --header authorization --header provider-token --public"
+  },
+  "author": "TinkerWare",
+  "license": "MIT",
+  "dependencies": {
+    "drakov": "1.x"
+  },
+  "keywords": [
+    "api-blue-print",
+    "drakov"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tinker-Ware/summerschool-frontend-item-api"
+  }
+}
