@@ -93,33 +93,3 @@ Resources related to the products
                 }
               ]
             }
-
-## Repository [/api/v1/products/{id}]
-+ Parameters
-    + id: `1` (number, required) - `id` id of a product.
-
-### Get a single product [GET]
-+ Request
-
-    + Header
-
-            authorization: Bearer qphYSqjEFk1RcFxYqqIIFk4vaBJvDoBr3t9aHTp1JFEAO0NS7ECyLJJyUPybOUNf
-
-+ Response 200 (application/json)
-
-    + Header
-
-            authorization: Bearer qphYSqjEFk1RcFxYqqIIFk4vaBJvDoBr3t9aHTp1JFEAO0NS7ECyLJJyUPybOUNf
-
-    + Body
-
-            {
-              "product":
-                      {
-                        "id": 1,
-                        "title": "Product",
-                        "description": "A product from Acme's catalog",
-                        "price": 19.99
-                        "image": "http://localhost/somestuff.jpg"
-                      }
-            }
